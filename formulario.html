@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+
+<html>
+    <html lang="pt-br">
+    <head>
+       
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        
+         <script src="js/main.js" defer="defer" ></script>
+       
+       
+        
+        <title>Formulário</title>
+    </head>
+
+    <body>  
+
+
+        
+        <div>
+            <h1 id="titulo">Cadastro de Candidatos</h1>
+            <br><br>
+            <h2 id="subtitulo"><strong>Dados Pessoais</strong></h2>
+            <br><br>
+            
+        </div>
+
+        
+        <form>
+            <fieldset class="grupo">
+        
+                <div class="campo">
+                    <label for="Nome Completo"><strong>Nome Completo</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+               
+               
+                </div>
+
+                
+                <div class="campo">
+                    <label for="Cargo Pretendido"><strong>Cargo Pretendido</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+
+
+
+            
+            <form>
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="Data Nascimento"><strong>Data Nascimento</strong></label>
+                        <input type="date" name="date" id="date" required>
+                   </div>
+                                
+                    <div class="campo">
+                        <label for="Estado Civil"><strong>Estado Civil:</strong></label>
+                            <select id="estadocivil" name="estadocivil">
+                            <option value="Selecione">Selecione</option>
+                            <option value="Casado">Casado</option>
+                             <option value="Solteiro">Solteiro</option>
+                             <option value="Solteiro">Viúvo</option>
+                             <option value="Solteiro">Separado</option>
+                             <option value="Solteiro">Divorciado</option>
+                            </select>
+                            </div>
+                     
+                  
+                        <div class="campo">
+                        <label for="Gênero"><strong>Gênero:</strong></label>
+                        <select id="Gênero" name="Gênero">
+                            <option value="Selecione">Selecione</option>
+                            <option value="Mulher cis">Mulher cis</option>
+                            <option value="Mulher trans">Mulher tras</option>
+                            <option value="Homem cis">Homem cis</option>
+                            <option value="Homem trans">Homem trans</option>
+                            <option value="Não binário">Não binário</option>
+                          </select>
+                   </div>
+                
+                </fieldset> 
+                </form>
+                                      
+                
+            
+            
+           
+
+
+            <div class="campo">
+                <label for="cep"><strong>CEP </strong></label>             
+                <input type="text" id="cep" required>    
+               
+              
+             
+             
+              
+              </div>
+
+           <form>
+            <fieldset class="grupo">
+            <div class="campo">
+                <label for="endereço"><strong>Endereço</strong></label> 
+                <input type="text" id="endereco">
+            </div>
+                <div class="campo">
+
+                    <label for="numero"><strong>Número</strong></label> 
+                    <input type="number" id="numero" required>
+                    </div>
+            </fieldset>  
+           </form>
+          
+            </div>
+       
+
+         
+         
+                <form>
+                <fieldset class="grupo">
+                
+          
+                
+                    <div class="campo">
+                 <label for="bairro"><strong>Bairro</strong></label>
+                <input type="text" id="bairro" >
+                 </div>
+                <div class="campo">
+                
+                <label><strong>Cidade</strong></label>
+                    <input type="text" id="cidade" value="">
+                </div>                        
+                <div class="campo">
+                <label><strong>Estado</strong></label>
+                <input type="text" id="estado" value="">
+                    </div>
+            </div>    
+        </fieldset>
+        </form>
+            
+       
+        
+
+        <form>
+                 
+            <fieldset class="grupo">
+            
+            <div class="campo">
+            
+            <label><strong>Telefone1</strong></label>
+             <input type="number" name="telefone" value="">
+            </div>                        
+           
+           
+            <div class="campo">
+             <label><strong>Telefone2</strong></label>
+                    <input type="number" name="telefone2" value="">
+                </fieldset>
+                </div>    
+
+
+    </form>
+        
+   
+
+    <form>
+        <fieldset class="grupo">
+         <div class="campo">
+        <label><strong>Celular</strong></label>
+        <input type="number" name="celular" value="" required>
+         </div>
+        <div class="campo">
+        
+        <label><strong>Contato</strong></label>
+            <input type="number" name="contato" value="">
+        </div>                        
+       
+        <div class="campo">
+         <label><strong>E-mail</strong></label>
+                <input type="email" name="email" value="" required>
+            </div>                        
+                 
+
+</form>
+    
+</fieldset>
+<br><br>
+<h2 id="subtitulo"><strong>Documentos</strong></h2>
+<br><br>
+
+
+<form>
+    <fieldset class="grupo">
+     <div class="campo">
+    <label><strong>Identidade </strong></label>
+    <input type="text" name="indentidade" value="">
+     </div>
+    <div class="campo">
+    
+    <label><strong>CPF</strong></label>
+        <input type="number"  maxlength="11" name="cpf" id="cpf"  onchange="validaCPF()" required >
+  
+  
+    </div>                        
+   
+   
+    <div class="campo">
+        <label for="Possui  Veiculo"><strong>Possui Veiculo:</strong></label>
+        <select id="veiculo" name="veiculo">
+            <option value="Selecione">Selecione</option>
+            <option value="Sim">Sim</option>
+          <option value="Não">Nao</option>
+         
+        </select>         
+    </div>                        
+
+        <div class="campo">
+            <label for="Habilitação "><strong>Habilitação:</strong> </label>
+            <select id="Habilitação" name="Habilitação">
+                <option value="Selecione">Selecione</option>
+                <option value="A">A</option>
+              <option value="B">B</option>
+              <option value="C">C</option>
+              <option value="D">D</option>
+              <option value="E">E</option>
+            </select>
+            </div>                 
+
+</fieldset>
+</form>
+
+<div>
+<button class="botao" type="submit" onsubmit="">Enviar</button> 
+</div>
+
+    </body>
+
+</html>
